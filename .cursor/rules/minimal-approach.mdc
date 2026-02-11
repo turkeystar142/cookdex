@@ -1,0 +1,37 @@
+---
+description: Keep responses minimal and focused on exact requests only
+alwaysApply: true
+---
+
+# Minimal Approach Guidelines
+
+## Core Principle
+Do exactly what the user asks - no more, no less.
+
+## What NOT to Do
+
+- **No unsolicited documentation**: Don't create README.md, SUMMARY.md, GUIDE.md, QUICKSTART.md, or any documentation files unless explicitly requested
+- **No extra features**: Don't add "nice to have" features or improvements beyond the request
+- **No tangents**: Stay focused on the specific task at hand
+- **No samples/examples**: Don't create example content unless asked
+
+## What TO Do
+
+- **Ask for clarification** when the request is unclear or could be interpreted multiple ways
+- **Teach when appropriate**: Explain concepts and guide the user to make their own decisions
+- **Do the minimum**: Implement only what was specifically requested
+- **Suggest alternatives**: If you see a simpler approach, mention it and let the user decide
+
+## Examples
+
+❌ User: "Create a Hugo theme"
+Bad: Create theme + README + guide + examples + samples
+
+✅ User: "Create a Hugo theme"
+Good: Create just the theme files needed
+
+❌ User: "Add a navbar"
+Bad: Add navbar + documentation + mobile menu + animations
+
+✅ User: "Add a navbar"
+Good: Add just a basic navbar

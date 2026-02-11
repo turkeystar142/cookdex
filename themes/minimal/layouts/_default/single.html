@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="container">
+    <h1>{{ .Title }}</h1>
+    
+    {{ if or .Params.prepTime .Params.cookTime .Params.servings }}
+    <div class="meta">
+        {{ if .Params.prepTime }}<span>Prep: {{ .Params.prepTime }}</span>{{ end }}
+        {{ if .Params.cookTime }}<span>Cook: {{ .Params.cookTime }}</span>{{ end }}
+        {{ if .Params.servings }}<span>Servings: {{ .Params.servings }}</span>{{ end }}
+    </div>
+    {{ end }}
+    
+    <div class="content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}
