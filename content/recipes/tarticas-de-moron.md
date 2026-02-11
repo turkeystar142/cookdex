@@ -1,5 +1,5 @@
 ---
-title: "Torticas de Morón"
+title: "Torticas de Moron"
 date: 2026-02-11
 draft: false
 description: "Traditional Cuban shortbread cookies with lime zest."

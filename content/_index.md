@@ -2,4 +2,4 @@
 title: "Home"
 ---
 
-Welcome to my recipe collection.
+Time to make something tasty...

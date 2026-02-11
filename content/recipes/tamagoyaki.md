@@ -11,7 +11,7 @@ categories:
   - meal
 tags:
   - savory
-  - stovetop
+  - specialized
 ---
 
 Japanese rolled omelette with a sweet and savory flavor.

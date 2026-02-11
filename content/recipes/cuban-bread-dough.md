@@ -1,5 +1,5 @@
 ---
-title: "Cuban Bread Dough"
+title: "Cuban Bread"
 date: 2026-02-11
 draft: false
 description: "Traditional Cuban bread dough with a crispy crust."

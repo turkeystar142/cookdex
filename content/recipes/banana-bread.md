@@ -1,5 +1,5 @@
 ---
-title: "Classic Banana Bread"
+title: "Banana Bread"
 date: 2026-02-10
 draft: false
 description: "A moist and delicious banana bread recipe that's perfect for using up overripe bananas."
