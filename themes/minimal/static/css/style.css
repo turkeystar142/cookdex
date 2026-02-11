@@ -370,3 +370,40 @@ footer p {
         font-size: 1em;
     }
 }
+
+/* Language Switcher */
+.site-header {
+    background-color: var(--card-bg);
+    border-bottom: 2px solid var(--tan);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.language-switcher {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.language-switcher a {
+    color: var(--warm-brown);
+    text-decoration: none;
+    font-size: 0.95em;
+    padding: 5px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.language-switcher a:hover {
+    background-color: var(--tan);
+    color: var(--text-dark);
+}
+
+@media (max-width: 480px) {
+    .language-switcher {
+        justify-content: center;
+    }
+}

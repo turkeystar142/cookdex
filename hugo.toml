@@ -1,4 +1,17 @@
 baseURL = 'https://turkeystar142.github.io/recipio/'
-languageCode = 'en-us'
-title = 'Recipio'
 theme = 'minimal'
+defaultContentLanguage = 'en'
+
+[languages.en]
+  languageCode = 'en-us'
+  languageName = 'English'
+  title = 'Recipio'
+  weight = 1
+  contentDir = 'content/en'
+
+[languages.es]
+  languageCode = 'es'
+  languageName = 'Español'
+  title = 'Recipio'
+  weight = 2
+  contentDir = 'content/es'
