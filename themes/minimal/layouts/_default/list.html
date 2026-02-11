@@ -3,15 +3,27 @@
     <h1>{{ .Title }}</h1>
     {{ .Content }}
     
-    <ul class="post-list">
+    <div class="recipe-grid">
         {{ range .Pages }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ if .Params.description }}
-            <p>{{ .Params.description }}</p>
+        <a href="{{ .Permalink }}" class="recipe-card">
+            {{ if .Params.image }}
+            <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="recipe-card-image">
+            {{ else }}
+            <div class="recipe-card-image" style="display: flex; align-items: center; justify-content: center; font-size: 3em;">
+                🍽️
+            </div>
             {{ end }}
-        </li>
+            <div class="recipe-card-content">
+                <h3 class="recipe-card-title">{{ .Title }}</h3>
+                {{ if or .Params.prepTime .Params.cookTime }}
+                <div class="recipe-card-meta">
+                    {{ if .Params.prepTime }}<span>⏱️ {{ .Params.prepTime }}</span>{{ end }}
+                    {{ if .Params.cookTime }}<span>🔥 {{ .Params.cookTime }}</span>{{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </a>
         {{ end }}
-    </ul>
+    </div>
 </div>
 {{ end }}

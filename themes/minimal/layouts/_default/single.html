@@ -1,17 +1,46 @@
 {{ define "main" }}
-<article class="container">
-    <h1>{{ .Title }}</h1>
-    
-    {{ if or .Params.prepTime .Params.cookTime .Params.servings }}
-    <div class="meta">
-        {{ if .Params.prepTime }}<span>Prep: {{ .Params.prepTime }}</span>{{ end }}
-        {{ if .Params.cookTime }}<span>Cook: {{ .Params.cookTime }}</span>{{ end }}
-        {{ if .Params.servings }}<span>Servings: {{ .Params.servings }}</span>{{ end }}
-    </div>
-    {{ end }}
-    
-    <div class="content">
-        {{ .Content }}
-    </div>
-</article>
+<div class="recipe-flip-container">
+    <article class="recipe-card-single">
+        <div class="recipe-header">
+            <a href="/recipio" class="back-link">
+                <span class="arrow-left"></span>
+            </a>
+            <h1>{{ .Title }}</h1>
+        </div>
+        
+        {{ if .Params.description }}
+        <p style="font-style: italic; margin-bottom: 20px;">{{ .Params.description }}</p>
+        {{ end }}
+        
+        {{ if or .Params.prepTime .Params.cookTime .Params.totalTime .Params.yield }}
+        <div class="recipe-meta">
+            {{ if .Params.prepTime }}<span>⏱️ Prep: {{ .Params.prepTime }}</span>{{ end }}
+            {{ if .Params.cookTime }}<span>🔥 Cook: {{ .Params.cookTime }}</span>{{ end }}
+            {{ if .Params.totalTime }}<span>⏰ Total: {{ .Params.totalTime }}</span>{{ end }}
+            {{ if .Params.yield }}<span>🍽️ Yield: {{ .Params.yield }}</span>{{ end }}
+        </div>
+        {{ end }}
+        
+        <button id="flip-button" class="flip-button">→ Flip for Instructions</button>
+        
+        {{ $content := .Content }}
+        {{ $ingredientsStart := 0 }}
+        {{ $instructionsStart := 0 }}
+        {{ $tipsStart := 0 }}
+        
+        <!-- Front Side: Ingredients -->
+        <div id="card-front" class="recipe-card-side active">
+            <div class="ingredients-list">
+                {{ $content | replaceRE "(?s)(<h2[^>]*>Instructions</h2>.*)" "" | safeHTML }}
+            </div>
+        </div>
+        
+        <!-- Back Side: Instructions -->
+        <div id="card-back" class="recipe-card-side">
+            <div class="instructions-list">
+                {{ $content | replaceRE "(?s)(.*<h2[^>]*>Ingredients</h2>.*?)(<h2[^>]*>Instructions</h2>)" "$2" | safeHTML }}
+            </div>
+        </div>
+    </article>
+</div>
 {{ end }}

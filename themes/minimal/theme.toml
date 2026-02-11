@@ -1,4 +1,4 @@
-name = "Minimal"
+name = "Rotodex"
 license = "MIT"
-description = "A minimal black and white Hugo theme"
+description = "A cozy recipe theme with flippable index cards and picnic table aesthetic"
 min_version = "0.120.0"
