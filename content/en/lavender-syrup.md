@@ -2,7 +2,7 @@
 title: "Lavender Syrup"
 date: 2026-02-11
 draft: false
-description: "Fragrant lavender syrup perfect for waffles, pancakes, or cocktails."
+description: "Fragrant lavender syrup perfect for teas, coffees, cocktails or baked goods."
 prepTime: "5 minutes"
 cookTime: "10 minutes"
 totalTime: "15 minutes"

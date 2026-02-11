@@ -479,10 +479,6 @@ a:hover {
     line-height: 1.8;
 }
 
-.recipe-content ol {
-    counter-reset: item;
-}
-
 .recipe-content ol li {
     position: relative;
 }
