@@ -8,11 +8,9 @@ cookTime: "65 minutes"
 totalTime: "75 minutes"
 yield: "1 loaf (approximately 12 slices)"
 categories:
-  - Breads
   - Breakfast
 tags:
   - banana
-  - bread
   - baking
   - easy
 ---
