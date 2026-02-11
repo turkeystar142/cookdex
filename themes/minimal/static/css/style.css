@@ -71,8 +71,6 @@ main {
 /* Homepage Hero */
 .homepage-hero {
     text-align: center;
-    margin-bottom: 60px;
-    padding: 40px 20px;
 }
 
 .site-title {
@@ -533,11 +531,6 @@ footer p {
         font-size: 1.2em;
     }
     
-    .homepage-hero {
-        padding: 30px 10px;
-        margin-bottom: 40px;
-    }
-    
     h1 {
         font-size: 2em;
     }
@@ -571,6 +564,7 @@ footer p {
     
     .filter-toggle-icon {
         font-size: 1.2em;
+        padding-bottom: 4px;
     }
 }
 
