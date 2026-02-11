@@ -8,14 +8,13 @@ cookTime: "10 minutes"
 totalTime: "15 minutes"
 yield: "2 cups"
 categories:
-  - Sauce
+  - topping
 tags:
-  - syrup
-  - lavender
-  - floral
+  - sweet
+  - stovetop
 ---
 
-Fragrant lavender syrup perfect for waffles, pancakes, or cocktails.
+Fragrant lavender syrup perfect for teas, coffees, cocktails or baked goods.
 
 ## Ingredients
 
@@ -37,6 +36,6 @@ Fragrant lavender syrup perfect for waffles, pancakes, or cocktails.
 ## Tips
 
 - Use culinary lavender, not decorative lavender.
-- Don't steep too long or it will become bitter.
+- Don't steep too long or hot, it will become bitter.
 - Store in an airtight container in the refrigerator for up to 2 weeks.
-- Great for cocktails, lemonade, or drizzling over desserts.
+- Great for cocktails, lemonade, or in royal icing.

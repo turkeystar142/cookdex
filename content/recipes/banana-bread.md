@@ -8,11 +8,10 @@ cookTime: "65 minutes"
 totalTime: "75 minutes"
 yield: "1 loaf (approximately 12 slices)"
 categories:
-  - Breakfast
+  - snack
 tags:
-  - banana
-  - baking
-  - easy
+  - sweet
+  - oven
 ---
 
 A moist and delicious banana bread recipe that's perfect for using up overripe bananas.

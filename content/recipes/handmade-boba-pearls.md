@@ -8,11 +8,10 @@ cookTime: "40 minutes (20 min boiling + 20 min resting)"
 totalTime: "70 minutes"
 yield: "2-3 servings"
 categories:
-  - Dessert
+  - snack
 tags:
-  - boba
-  - tapioca
-  - bubble-tea
+  - sweet
+  - stovetop
 ---
 
 Chewy tapioca boba pearls made from scratch.

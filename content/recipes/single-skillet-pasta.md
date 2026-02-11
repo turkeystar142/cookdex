@@ -8,11 +8,10 @@ cookTime: "20 minutes"
 totalTime: "30 minutes"
 yield: "4 servings"
 categories:
-  - Dinner
+  - meal
 tags:
-  - pasta
-  - one-pot
-  - quick
+  - savory
+  - stovetop
 ---
 
 One-pot pasta with bacon, tomato sauce, and cream.

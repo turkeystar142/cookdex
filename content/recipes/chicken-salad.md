@@ -8,11 +8,10 @@ cookTime: "0 minutes"
 totalTime: "10 minutes"
 yield: "2-3 servings"
 categories:
-  - Salad
+  - meal
 tags:
-  - chicken
-  - quick
-  - easy
+  - savory
+  - as-is
 ---
 
 Creamy chicken salad with celery, green onion, and Dijon mustard.

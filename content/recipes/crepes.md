@@ -8,11 +8,10 @@ cookTime: "15 minutes"
 totalTime: "20 minutes"
 yield: "8-10 crepes"
 categories:
-  - Breakfast
+  - snack
 tags:
-  - crepes
-  - french
-  - versatile
+  - neutral
+  - stovetop
 ---
 
 Thin and delicate crepes perfect for sweet or savory fillings.

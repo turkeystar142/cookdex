@@ -8,11 +8,10 @@ cookTime: "10 minutes"
 totalTime: "20 minutes"
 yield: "24 cookies"
 categories:
-  - Dessert
+  - snack
 tags:
-  - cookies
-  - baking
-  - chocolate
+  - sweet
+  - oven
 ---
 
 Classic chocolate chip cookies that are crispy on the edges and soft in the center.

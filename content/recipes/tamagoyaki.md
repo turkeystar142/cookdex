@@ -8,11 +8,10 @@ cookTime: "10 minutes"
 totalTime: "15 minutes"
 yield: "2 servings"
 categories:
-  - Breakfast
+  - meal
 tags:
-  - japanese
-  - eggs
-  - traditional
+  - savory
+  - stovetop
 ---
 
 Japanese rolled omelette with a sweet and savory flavor.

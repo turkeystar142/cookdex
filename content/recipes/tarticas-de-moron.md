@@ -1,5 +1,5 @@
 ---
-title: "Tarticas de Morón"
+title: "Torticas de Morón"
 date: 2026-02-11
 draft: false
 description: "Traditional Cuban shortbread cookies with lime zest."
@@ -8,11 +8,10 @@ cookTime: "25 minutes"
 totalTime: "40 minutes"
 yield: "24 cookies"
 categories:
-  - Dessert
+  - snack
 tags:
-  - cuban
-  - cookies
-  - traditional
+  - sweet
+  - oven
 ---
 
 Traditional Cuban shortbread cookies with lime zest.

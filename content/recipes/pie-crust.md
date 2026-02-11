@@ -8,11 +8,10 @@ cookTime: "0 minutes (ready to fill)"
 totalTime: "10 minutes"
 yield: "1 pie crust"
 categories:
-  - Baking
+  - snack
 tags:
-  - pastry
-  - baking
-  - easy
+  - neutral
+  - oven
 ---
 
 Flaky and buttery pie crust that's perfect for any pie.

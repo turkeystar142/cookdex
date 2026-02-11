@@ -8,11 +8,10 @@ cookTime: "15 minutes"
 totalTime: "25 minutes"
 yield: "6-8 waffles"
 categories:
-  - Breakfast
+  - snack
 tags:
-  - waffles
-  - breakfast
-  - easy
+  - sweet
+  - specialized
 ---
 
 Fluffy homemade waffles perfect for breakfast.

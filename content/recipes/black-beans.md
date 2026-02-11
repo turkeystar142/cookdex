@@ -1,5 +1,5 @@
 ---
-title: "Black Beans"
+title: "Black Bean Stew"
 date: 2026-02-11
 draft: false
 description: "Traditional black beans cooked with aromatic vegetables and spices."
@@ -8,11 +8,10 @@ cookTime: "2-3 hours"
 totalTime: "4-5 hours"
 yield: "6-8 servings"
 categories:
-  - Side Dish
+  - meal
 tags:
-  - beans
-  - cuban
-  - traditional
+  - savory
+  - stovetop
 ---
 
 Traditional black beans cooked with aromatic vegetables and spices.

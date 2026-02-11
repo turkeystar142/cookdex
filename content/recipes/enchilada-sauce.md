@@ -8,11 +8,10 @@ cookTime: "15 minutes"
 totalTime: "20 minutes"
 yield: "2 cups"
 categories:
-  - Sauce
+  - topping
 tags:
-  - mexican
-  - sauce
-  - enchiladas
+  - savory
+  - stovetop
 ---
 
 Homemade enchilada sauce with rich chili flavor.

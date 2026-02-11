@@ -8,11 +8,11 @@ cookTime: "30 minutes"
 totalTime: "50 minutes"
 yield: "8 enchiladas"
 categories:
-  - Dinner
+  - meal
 tags:
-  - mexican
-  - chicken
-  - enchiladas
+  - savory
+  - stovetop
+  - oven
 ---
 
 Cheesy chicken enchiladas with black beans and green chilis.

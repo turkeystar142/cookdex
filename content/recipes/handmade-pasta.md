@@ -8,11 +8,10 @@ cookTime: "3-5 minutes"
 totalTime: "50 minutes"
 yield: "Varies (100g flour : 1 egg)"
 categories:
-  - Pasta
+  - meal
 tags:
-  - pasta
-  - italian
-  - handmade
+  - neutral
+  - stovetop
 ---
 
 Simple handmade pasta using a 1:1 ratio of flour to eggs.
@@ -33,7 +32,7 @@ Simple handmade pasta using a 1:1 ratio of flour to eggs.
 
 5. **Roll** - Roll thin enough to see light through it.
 
-6. **Cut** - Cut into desired shapes (noodles, squares for bows or ravioli, etc.).
+6. **Cut** - Cut into desired shapes (noodles, squares for bows or ravioli, etc.). Boil the pasta as soon as possible, or freeze for storage. Do not store longer than 5 days.
 
 ## Tips
 

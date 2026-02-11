@@ -8,11 +8,10 @@ cookTime: "40 minutes"
 totalTime: "50 minutes"
 yield: "1 pie"
 categories:
-  - Dessert
+  - snack
 tags:
-  - pie
-  - pecans
-  - baking
+  - sweet
+  - oven
 ---
 
 Rich and nutty pecan pie filling with bourbon.

@@ -8,11 +8,10 @@ cookTime: "45 minutes"
 totalTime: "65 minutes"
 yield: "6-8 servings"
 categories:
-  - Soup
+  - meal
 tags:
-  - chicken
-  - comfort-food
-  - vegetables
+  - savory
+  - stovetop
 ---
 
 A hearty and flavorful chicken soup loaded with vegetables and aromatics.

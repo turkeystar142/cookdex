@@ -8,11 +8,10 @@ cookTime: "10 minutes"
 totalTime: "20 minutes"
 yield: "4 cakes"
 categories:
-  - Dessert
+  - snack
 tags:
-  - chocolate
-  - baking
-  - fancy
+  - sweet
+  - oven
 ---
 
 Decadent chocolate lava cakes with a molten center.
