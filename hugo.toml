@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://turkeystar142.github.io/recipio/'
 languageCode = 'en-us'
 title = 'Recipio'
 theme = 'minimal'
