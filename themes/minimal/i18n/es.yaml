@@ -1,0 +1,25 @@
+# Filter labels
+filter:
+  category: "Categoría:"
+  flavor: "Sabor:"
+  cooking_method: "Método de Cocción:"
+  
+# Category filters
+category:
+  all: "Todos"
+  meal: "Comida"
+  snack: "Merienda"
+  topping: "Cobertura"
+
+# Flavor tags
+flavor:
+  savory: "Salado"
+  sweet: "Dulce"
+  neutral: "Neutral"
+
+# Cooking method tags
+cooking_method:
+  stovetop: "Estufa"
+  oven: "Horno"
+  specialized: "Especializado"
+  as_is: "Sin Cocinar"

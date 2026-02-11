@@ -121,6 +121,66 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Filter Container */
+.filter-container {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px var(--card-shadow);
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group:last-child {
+    margin-bottom: 0;
+}
+
+.filter-label {
+    font-family: 'CustomHandwritten', cursive, sans-serif;
+    font-size: 1.3em;
+    color: var(--warm-brown);
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: var(--cream);
+    border: 2px solid var(--tan);
+    color: var(--text-dark);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    background: var(--tan);
+    border-color: var(--warm-brown);
+    transform: translateY(-1px);
+}
+
+.filter-btn.active {
+    background: var(--warm-brown);
+    color: var(--card-bg);
+    border-color: var(--warm-brown);
+}
+
+.filter-btn:focus {
+    outline: 2px solid var(--warm-brown);
+    outline-offset: 2px;
+}
+
 /* Recipe Grid (Homepage) */
 .recipe-grid {
     display: grid;
@@ -350,6 +410,14 @@ footer p {
     h2 {
         font-size: 1.6em;
     }
+    
+    .filter-container {
+        padding: 20px;
+    }
+    
+    .filter-label {
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -368,6 +436,15 @@ footer p {
     
     .site-tagline {
         font-size: 1em;
+    }
+    
+    .filter-container {
+        padding: 15px;
+    }
+    
+    .filter-btn {
+        font-size: 0.9em;
+        padding: 6px 12px;
     }
 }
 

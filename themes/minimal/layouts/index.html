@@ -5,10 +5,43 @@
         <p class="site-tagline">{{ .Content }}</p>
     </div>
     
+    <div class="filter-container">
+        <div class="filter-group">
+            <h4 class="filter-label">{{ i18n "filter_category" }}</h4>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter-type="category" data-filter-value="all">{{ i18n "category_all" }}</button>
+                <button class="filter-btn" data-filter-type="category" data-filter-value="meal">{{ i18n "category_meal" }}</button>
+                <button class="filter-btn" data-filter-type="category" data-filter-value="snack">{{ i18n "category_snack" }}</button>
+                <button class="filter-btn" data-filter-type="category" data-filter-value="topping">{{ i18n "category_topping" }}</button>
+            </div>
+        </div>
+        
+        <div class="filter-group">
+            <h4 class="filter-label">{{ i18n "filter_flavor" }}</h4>
+            <div class="filter-buttons">
+                <button class="filter-btn" data-filter-type="tag" data-filter-value="savory">{{ i18n "flavor_savory" }}</button>
+                <button class="filter-btn" data-filter-type="tag" data-filter-value="sweet">{{ i18n "flavor_sweet" }}</button>
+                <button class="filter-btn" data-filter-type="tag" data-filter-value="neutral">{{ i18n "flavor_neutral" }}</button>
+            </div>
+        </div>
+        
+        <div class="filter-group">
+            <h4 class="filter-label">{{ i18n "filter_cooking_method" }}</h4>
+            <div class="filter-buttons">
+                <button class="filter-btn" data-filter-type="tag" data-filter-value="stovetop">{{ i18n "cooking_method_stovetop" }}</button>
+                <button class="filter-btn" data-filter-type="tag" data-filter-value="oven">{{ i18n "cooking_method_oven" }}</button>
+                <button class="filter-btn" data-filter-type="tag" data-filter-value="specialized">{{ i18n "cooking_method_specialized" }}</button>
+                <button class="filter-btn" data-filter-type="tag" data-filter-value="as-is">{{ i18n "cooking_method_as_is" }}</button>
+            </div>
+        </div>
+    </div>
+    
     <div class="recipe-grid">
         {{ range where .Site.RegularPages "Type" "page" }}
         {{ if ne .File.LogicalName "_index.md" }}
-        <a href="{{ .Permalink }}" class="recipe-card">
+        <a href="{{ .Permalink }}" class="recipe-card" 
+           data-categories="{{ delimit .Params.categories "," }}"
+           data-tags="{{ delimit .Params.tags "," }}">
             {{ if .Params.image }}
             <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="recipe-card-image">
             {{ else }}

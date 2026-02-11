@@ -1,0 +1,35 @@
+# Filter labels
+- id: filter_category
+  translation: "Category:"
+- id: filter_flavor
+  translation: "Flavor:"
+- id: filter_cooking_method
+  translation: "Cooking Method:"
+  
+# Category filters
+- id: category_all
+  translation: "All"
+- id: category_meal
+  translation: "Meal"
+- id: category_snack
+  translation: "Snack"
+- id: category_topping
+  translation: "Topping"
+
+# Flavor tags
+- id: flavor_savory
+  translation: "Savory"
+- id: flavor_sweet
+  translation: "Sweet"
+- id: flavor_neutral
+  translation: "Neutral"
+
+# Cooking method tags
+- id: cooking_method_stovetop
+  translation: "Stovetop"
+- id: cooking_method_oven
+  translation: "Oven"
+- id: cooking_method_specialized
+  translation: "Specialized"
+- id: cooking_method_as_is
+  translation: "As-Is"

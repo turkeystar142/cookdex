@@ -1,0 +1,35 @@
+# Filter labels
+- id: filter_category
+  translation: "Categoría:"
+- id: filter_flavor
+  translation: "Sabor:"
+- id: filter_cooking_method
+  translation: "Método de Cocción:"
+  
+# Category filters
+- id: category_all
+  translation: "Todos"
+- id: category_meal
+  translation: "Comida"
+- id: category_snack
+  translation: "Merienda"
+- id: category_topping
+  translation: "Cobertura"
+
+# Flavor tags
+- id: flavor_savory
+  translation: "Salado"
+- id: flavor_sweet
+  translation: "Dulce"
+- id: flavor_neutral
+  translation: "Neutral"
+
+# Cooking method tags
+- id: cooking_method_stovetop
+  translation: "Estufa"
+- id: cooking_method_oven
+  translation: "Horno"
+- id: cooking_method_specialized
+  translation: "Especializado"
+- id: cooking_method_as_is
+  translation: "Sin Cocinar"

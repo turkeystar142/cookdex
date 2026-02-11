@@ -1,0 +1,25 @@
+# Filter labels
+filter:
+  category: "Category:"
+  flavor: "Flavor:"
+  cooking_method: "Cooking Method:"
+  
+# Category filters
+category:
+  all: "All"
+  meal: "Meal"
+  snack: "Snack"
+  topping: "Topping"
+
+# Flavor tags
+flavor:
+  savory: "Savory"
+  sweet: "Sweet"
+  neutral: "Neutral"
+
+# Cooking method tags
+cooking_method:
+  stovetop: "Stovetop"
+  oven: "Oven"
+  specialized: "Specialized"
+  as_is: "As-Is"
