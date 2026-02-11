@@ -9,8 +9,41 @@
     
     // Initialize when DOM is ready
     document.addEventListener('DOMContentLoaded', function() {
+        initializeTray();
         initializeFilters();
     });
+    
+    function initializeTray() {
+        const tray = document.getElementById('filterTray');
+        const toggleBtn = document.getElementById('filterToggle');
+        const closeBtn = document.getElementById('filterTrayClose');
+        const overlay = document.getElementById('filterTrayOverlay');
+        
+        if (!tray || !toggleBtn || !closeBtn || !overlay) {
+            return; // Elements not found, skip initialization
+        }
+        
+        // Open tray
+        toggleBtn.addEventListener('click', function() {
+            tray.classList.add('open');
+        });
+        
+        // Close tray
+        closeBtn.addEventListener('click', function() {
+            tray.classList.remove('open');
+        });
+        
+        overlay.addEventListener('click', function() {
+            tray.classList.remove('open');
+        });
+        
+        // Escape key to close
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && tray.classList.contains('open')) {
+                tray.classList.remove('open');
+            }
+        });
+    }
     
     function initializeFilters() {
         const filterButtons = document.querySelectorAll('.filter-btn');

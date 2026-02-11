@@ -1,3 +1,11 @@
+# Filter tray UI
+- id: filter_toggle
+  translation: "Filtrar Recetas"
+- id: filter_tray_title
+  translation: "Filtrar Recetas"
+- id: filter_tray_close
+  translation: "Cerrar"
+
 # Filter labels
 - id: filter_category
   translation: "Categoría:"
