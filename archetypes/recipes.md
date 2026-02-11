@@ -25,10 +25,3 @@ Brief description of the recipe.
 ## Tips
 
 - 
-
-## Nutritional Information (per serving)
-
-- **Calories:** 
-- **Fat:** 
-- **Carbohydrates:** 
-- **Protein:** 
