@@ -14,8 +14,6 @@ tags:
   - specialized
 ---
 
-Fluffy homemade waffles perfect for breakfast.
-
 ## Ingredients
 
 - 2 large eggs, room temperature

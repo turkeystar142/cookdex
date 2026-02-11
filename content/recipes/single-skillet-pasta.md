@@ -14,8 +14,6 @@ tags:
   - stovetop
 ---
 
-One-pan pasta with bacon, tomato sauce, and cream.
-
 ## Ingredients
 
 - 1 strip bacon, diced

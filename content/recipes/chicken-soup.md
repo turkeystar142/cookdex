@@ -14,8 +14,6 @@ tags:
   - stovetop
 ---
 
-A hearty and flavorful chicken soup loaded with vegetables and aromatics.
-
 ## Ingredients
 
 - Skinless, fatless chicken chunks

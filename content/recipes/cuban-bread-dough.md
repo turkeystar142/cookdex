@@ -14,8 +14,6 @@ tags:
   - oven
 ---
 
-Traditional Cuban bread dough with a crispy crust.
-
 ## Ingredients
 
 ### Starter (leave overnight in fridge)

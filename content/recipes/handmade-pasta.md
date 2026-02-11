@@ -14,8 +14,6 @@ tags:
   - stovetop
 ---
 
-Simple handmade pasta using a 1:1 ratio of flour to eggs.
-
 ## Ingredients
 
 - 100 g flour : 1 egg (repeat ratio as needed)

@@ -14,8 +14,6 @@ tags:
   - oven
 ---
 
-Traditional Cuban shortbread cookies with lime zest.
-
 ## Ingredients
 
 - 1 1/4 cups shortening

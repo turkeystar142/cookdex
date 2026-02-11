@@ -14,8 +14,6 @@ tags:
   - oven
 ---
 
-Decadent chocolate lava cakes with a molten center.
-
 ## Ingredients
 
 - 100 g chocolate

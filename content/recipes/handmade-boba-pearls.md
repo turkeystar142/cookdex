@@ -14,8 +14,6 @@ tags:
   - stovetop
 ---
 
-Chewy tapioca boba pearls made from scratch.
-
 ## Ingredients
 
 - 89 g tapioca starch

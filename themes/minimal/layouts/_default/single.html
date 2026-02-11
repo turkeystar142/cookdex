@@ -9,7 +9,7 @@
         </div>
         
         {{ if .Params.description }}
-        <p style="font-style: italic; margin-bottom: 20px;">{{ .Params.description }}</p>
+        <p class="recipe-description">{{ .Params.description }}</p>
         {{ end }}
         
         {{ if or .Params.prepTime .Params.cookTime .Params.totalTime .Params.yield }}
@@ -21,25 +21,8 @@
         </div>
         {{ end }}
         
-        <button id="flip-button" class="flip-button">→ Flip for Instructions</button>
-        
-        {{ $content := .Content }}
-        {{ $ingredientsStart := 0 }}
-        {{ $instructionsStart := 0 }}
-        {{ $tipsStart := 0 }}
-        
-        <!-- Front Side: Ingredients -->
-        <div id="card-front" class="recipe-card-side active">
-            <div class="ingredients-list">
-                {{ $content | replaceRE "(?s)(<h2[^>]*>Instructions</h2>.*)" "" | safeHTML }}
-            </div>
-        </div>
-        
-        <!-- Back Side: Instructions -->
-        <div id="card-back" class="recipe-card-side">
-            <div class="instructions-list">
-                {{ $content | replaceRE "(?s)(.*<h2[^>]*>Ingredients</h2>.*?)(<h2[^>]*>Instructions</h2>)" "$2" | safeHTML }}
-            </div>
+        <div class="recipe-content">
+            {{ .Content }}
         </div>
     </article>
 </div>

@@ -235,35 +235,31 @@ a:hover {
     position: relative;
 }
 
-.recipe-card-side {
-    display: none;
+/* Recipe Content Layout */
+.recipe-content {
+    margin-top: 30px;
 }
 
-.recipe-card-side.active {
-    display: block;
+.recipe-content h2 {
+    color: var(--warm-brown);
+    border-bottom: 2px solid var(--tan);
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-.flip-button {
-    background: var(--warm-brown);
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-size: 1em;
-    cursor: pointer;
-    margin: 20px 0;
-    font-family: 'CustomHandwritten', cursive, sans-serif;
-    transition: background 0.2s;
-}
-
-.flip-button:hover {
-    background: var(--text-dark);
+/* Recipe Description */
+.recipe-description {
+    text-align: center;
+    font-style: italic; 
+    margin-bottom: 20px;
 }
 
 /* Recipe Metadata */
 .recipe-meta {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     margin: 20px 0;
     padding: 15px;
@@ -276,34 +272,29 @@ a:hover {
     color: var(--text-dark);
 }
 
-/* Ingredients and Instructions */
-.ingredients-list ul,
-.instructions-list ol {
+/* Recipe Content Styling */
+.recipe-content ul ol {
     margin: 15px 0 15px 30px;
 }
 
-.ingredients-list li,
-.instructions-list li {
+.recipe-content li {
     margin-bottom: 10px;
     line-height: 1.8;
 }
 
-.instructions-list ol {
+.recipe-content ol {
     counter-reset: item;
-    list-style: none;
 }
 
-.instructions-list li {
-    counter-increment: item;
+.recipe-content ol li {
     position: relative;
-    padding-left: 10px;
 }
 
-.instructions-list li::before {
-    content: counter(item) ".";
-    font-weight: bold;
-    color: var(--warm-brown);
-    margin-right: 10px;
+.recipe-content h3 {
+    color: var(--text-dark);
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 /* Tips Section */

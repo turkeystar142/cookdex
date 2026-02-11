@@ -14,8 +14,6 @@ tags:
   - stovetop
 ---
 
-Traditional black beans cooked with aromatic vegetables and spices.
-
 ## Ingredients
 
 - 1/2 bag washed beans, soaked for 2 hours

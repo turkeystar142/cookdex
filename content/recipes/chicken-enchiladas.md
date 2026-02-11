@@ -15,8 +15,6 @@ tags:
   - oven
 ---
 
-Cheesy chicken enchiladas with black beans and green chilis.
-
 ## Ingredients
 
 ### Filling

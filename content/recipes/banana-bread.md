@@ -14,8 +14,6 @@ tags:
   - oven
 ---
 
-A moist and delicious banana bread recipe that's perfect for using up overripe bananas.
-
 ## Ingredients
 
 ### Dry Ingredients

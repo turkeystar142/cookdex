@@ -14,8 +14,6 @@ tags:
   - stovetop
 ---
 
-Homemade enchilada sauce with rich chili flavor.
-
 ## Ingredients
 
 - 2 tbsp olive oil

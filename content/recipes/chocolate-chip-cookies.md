@@ -14,8 +14,6 @@ tags:
   - oven
 ---
 
-Classic chocolate chip cookies that are crispy on the edges and soft in the center.
-
 ## Ingredients
 
 - 1/2 cup butter (soft, salted)

@@ -14,8 +14,6 @@ tags:
   - oven
 ---
 
-Rich and nutty pecan pie filling with bourbon.
-
 ## Ingredients
 
 - 5 tablespoons unsalted butter

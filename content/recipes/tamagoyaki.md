@@ -14,8 +14,6 @@ tags:
   - specialized
 ---
 
-Japanese rolled omelette with a sweet and savory flavor.
-
 ## Ingredients
 
 - 1/2 teaspoon sugar

@@ -14,8 +14,6 @@ tags:
   - stovetop
 ---
 
-Fragrant lavender syrup perfect for teas, coffees, cocktails or baked goods.
-
 ## Ingredients
 
 - 1 1/2 cups water

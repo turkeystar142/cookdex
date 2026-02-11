@@ -14,8 +14,6 @@ tags:
   - stovetop
 ---
 
-Thin and delicate crepes perfect for sweet or savory fillings.
-
 ## Ingredients
 
 - 1 cup flour

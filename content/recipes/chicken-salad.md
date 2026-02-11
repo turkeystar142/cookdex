@@ -14,8 +14,6 @@ tags:
   - as-is
 ---
 
-Creamy chicken salad with celery, green onion, and Dijon mustard.
-
 ## Ingredients
 
 - 1 cup/can cooked chicken shreds

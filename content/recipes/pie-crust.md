@@ -14,8 +14,6 @@ tags:
   - oven
 ---
 
-Flaky and buttery pie crust that's perfect for any pie.
-
 ## Ingredients
 
 - 1 1/4 cup flour
