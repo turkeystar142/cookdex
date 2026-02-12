@@ -1,10 +1,11 @@
 /* Color Variables */
 :root {
     --cream: #F5F1E8;
-    --tan: #D4C5B0;
+    --tan: #e4d3bb;
     --warm-brown: #8B7355;
-    --text-dark: #3E2723;
-    --gingham-red: rgba(180, 80, 70, 0.05);
+    --warm-green: #738B55;
+    --text-dark: #38442a;
+    --gingham-red: rgba(180, 80, 70, 0.15);
     --card-shadow: rgba(0, 0, 0, 0.1);
     --card-bg: #FFFEF9;
     --body-font: Georgia, 'Times New Roman', serif;
@@ -81,7 +82,7 @@ main {
 .site-title {
     font-size: 4.5em;
     margin-bottom: 15px;
-    color: var(--warm-brown);
+    color: var(--warm-green);
     font-weight: normal;
     line-height: 1.2;
 }
@@ -129,7 +130,7 @@ a:hover {
     position: fixed;
     top: 80px;
     left: 30px;
-    background: var(--warm-brown);
+    background: var(--text-dark);
     color: var(--card-bg);
     border: none;
     border-radius: 50px;
@@ -146,7 +147,6 @@ a:hover {
 }
 
 .filter-toggle:hover {
-    background: var(--text-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
@@ -279,7 +279,7 @@ a:hover {
 .filter-label {
     font-family: 'CustomHandwritten', cursive, sans-serif;
     font-size: 1.3em;
-    color: var(--warm-brown);
+    color: var(--text-dark);
     margin-bottom: 10px;
     font-weight: normal;
 }
@@ -309,7 +309,7 @@ a:hover {
 }
 
 .filter-btn.active {
-    background: var(--warm-brown);
+    background: var(--text-dark);
     color: var(--card-bg);
     border-color: var(--warm-brown);
 }
@@ -626,7 +626,7 @@ footer p {
 }
 
 .language-switcher a {
-    color: var(--warm-brown);
+    color: var(--text-dark);
     text-decoration: none;
     font-size: 0.95em;
     padding: 5px 12px;
