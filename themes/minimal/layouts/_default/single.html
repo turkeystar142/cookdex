@@ -15,10 +15,10 @@
         
         {{ if or .Params.prepTime .Params.cookTime .Params.totalTime .Params.yield }}
         <div class="recipe-meta">
-            {{ if .Params.prepTime }}<span>⏱️ Prep: {{ .Params.prepTime }}</span>{{ end }}
-            {{ if .Params.cookTime }}<span>🔥 Cook: {{ .Params.cookTime }}</span>{{ end }}
-            {{ if .Params.totalTime }}<span>⏰ Total: {{ .Params.totalTime }}</span>{{ end }}
-            {{ if .Params.yield }}<span>🍽️ Yield: {{ .Params.yield }}</span>{{ end }}
+            {{ if .Params.prepTime }}<span><i class="fa-regular fa-clock" aria-hidden="true"></i> Prep: {{ .Params.prepTime }}</span>{{ end }}
+            {{ if .Params.cookTime }}<span><i class="fa-solid fa-fire-burner" aria-hidden="true"></i> Cook: {{ .Params.cookTime }}</span>{{ end }}
+            {{ if .Params.totalTime }}<span><i class="fa-regular fa-clock" aria-hidden="true"></i> Total: {{ .Params.totalTime }}</span>{{ end }}
+            {{ if .Params.yield }}<span><i class="fa-solid fa-utensils" aria-hidden="true"></i> Yield: {{ .Params.yield }}</span>{{ end }}
         </div>
         {{ end }}
         

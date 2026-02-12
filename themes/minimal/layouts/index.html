@@ -2,7 +2,7 @@
 <div class="container">
     <div class="filter-search-bar">
         <button class="filter-toggle" id="filterToggle" aria-label="{{ i18n "filter_toggle" }}">
-            <span class="filter-toggle-icon">⚙</span>
+            <span class="filter-toggle-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></span>
             <span class="filter-toggle-text">{{ i18n "filter_toggle" }}</span>
         </button>
         
@@ -63,15 +63,15 @@
             <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="recipe-card-image">
             {{ else }}
             <div class="recipe-card-image" style="display: flex; align-items: center; justify-content: center; font-size: 3em;">
-                🍽️
+                <i class="fa-solid fa-utensils" aria-hidden="true"></i>
             </div>
             {{ end }}
             <div class="recipe-card-content">
                 <h2 class="recipe-card-title">{{ .Title }}</h2>
                 {{ if or .Params.prepTime .Params.cookTime }}
                 <div class="recipe-card-meta">
-                    {{ if .Params.prepTime }}<span>⏱️ {{ .Params.prepTime }}</span>{{ end }}
-                    {{ if .Params.cookTime }}<span>🔥 {{ .Params.cookTime }}</span>{{ end }}
+                    {{ if .Params.prepTime }}<span><i class="fa-regular fa-clock" aria-hidden="true"></i> {{ .Params.prepTime }}</span>{{ end }}
+                    {{ if .Params.cookTime }}<span><i class="fa-solid fa-fire-burner" aria-hidden="true"></i> {{ .Params.cookTime }}</span>{{ end }}
                 </div>
                 {{ end }}
             </div>

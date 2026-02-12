@@ -509,6 +509,9 @@ a:hover {
 .recipe-meta span {
     font-size: 1em;
     color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* Recipe Content Styling */
@@ -605,7 +608,6 @@ footer p {
     
     .filter-toggle-icon {
         font-size: 1.2em;
-        padding-bottom: 4px;
     }
     
 }
