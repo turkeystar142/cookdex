@@ -62,6 +62,9 @@
             return;
         }
         
+        // Clear any persisted value from browser on page load
+        searchInput.value = '';
+        
         searchInput.addEventListener('input', function(e) {
             state.searchQuery = e.target.value.toLowerCase().trim();
             applyFilters();
