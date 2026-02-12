@@ -5,6 +5,10 @@
   translation: "Filter Recipes"
 - id: filter_tray_close
   translation: "Close"
+- id: search_placeholder
+  translation: "Search recipes..."
+- id: search_label
+  translation: "Search recipes by title"
 
 # Filter labels
 - id: filter_category

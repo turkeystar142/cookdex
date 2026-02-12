@@ -1,9 +1,17 @@
 {{ define "main" }}
 <div class="container">
-    <button class="filter-toggle" id="filterToggle" aria-label="{{ i18n "filter_toggle" }}">
-        <span class="filter-toggle-icon">⚙</span>
-        <span class="filter-toggle-text">{{ i18n "filter_toggle" }}</span>
-    </button>
+    <div class="filter-search-bar">
+        <button class="filter-toggle" id="filterToggle" aria-label="{{ i18n "filter_toggle" }}">
+            <span class="filter-toggle-icon">⚙</span>
+            <span class="filter-toggle-text">{{ i18n "filter_toggle" }}</span>
+        </button>
+        
+        <input type="search" 
+               class="recipe-search" 
+               id="recipeSearch" 
+               placeholder="{{ i18n "search_placeholder" }}"
+               aria-label="{{ i18n "search_label" }}">
+    </div>
     
     <div class="filter-tray" id="filterTray">
         <div class="filter-tray-overlay" id="filterTrayOverlay"></div>

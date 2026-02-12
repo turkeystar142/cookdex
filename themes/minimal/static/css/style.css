@@ -122,6 +122,14 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Filter and Search Bar Container */
+.filter-search-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
 /* Filter Toggle Button */
 .filter-toggle {
     position: relative;
@@ -135,7 +143,7 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin: 20px 0;
+    margin: 0;
     font-family: var(--body-font);
     font-size: 0.95em;
     transition: all 0.2s ease;
@@ -158,6 +166,30 @@ a:hover {
 
 .filter-toggle-text {
     font-weight: 500;
+}
+
+/* Recipe Search Input */
+.recipe-search {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid var(--tan);
+    border-radius: 50px;
+    background: var(--card-bg);
+    color: var(--text-dark);
+    font-family: var(--body-font);
+    font-size: 0.95em;
+    transition: all 0.2s ease;
+}
+
+.recipe-search:focus {
+    outline: none;
+    border-color: var(--warm-brown);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-search::placeholder {
+    color: var(--text-dark);
+    opacity: 0.5;
 }
 
 /* Filter Tray */
@@ -505,7 +537,6 @@ footer {
 
 footer p {
     color: var(--text-dark);
-    opacity: 0.8;
 }
 
 /* Responsive Design */
@@ -542,8 +573,13 @@ footer p {
         font-size: 1.2em;
     }
     
-    .filter-toggle {
+    .filter-search-bar {
+        gap: 10px;
         margin: 15px 0;
+    }
+    
+    .filter-toggle {
+        margin: 0;
         padding: 8px 12px;
         border-radius: 8px;
     }
@@ -556,6 +592,7 @@ footer p {
         font-size: 1.2em;
         padding-bottom: 4px;
     }
+    
 }
 
 @media (max-width: 480px) {
@@ -582,10 +619,20 @@ footer p {
         padding: 6px 12px;
     }
     
-    .filter-toggle {
+    .filter-search-bar {
+        gap: 8px;
         margin: 12px 0;
+    }
+    
+    .filter-toggle {
+        margin: 0;
         padding: 6px 10px;
         border-radius: 6px;
+    }
+    
+    .recipe-search {
+        font-size: 0.9em;
+        padding: 10px 16px;
     }
 }
 

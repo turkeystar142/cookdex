@@ -4,13 +4,15 @@
     // State management
     const state = {
         activeCategory: 'all',
-        activeTags: new Set()
+        activeTags: new Set(),
+        searchQuery: ''
     };
     
     // Initialize when DOM is ready
     document.addEventListener('DOMContentLoaded', function() {
         initializeTray();
         initializeFilters();
+        initializeSearch();
     });
     
     function initializeTray() {
@@ -50,6 +52,19 @@
         
         filterButtons.forEach(button => {
             button.addEventListener('click', handleFilterClick);
+        });
+    }
+    
+    function initializeSearch() {
+        const searchInput = document.getElementById('recipeSearch');
+        
+        if (!searchInput) {
+            return;
+        }
+        
+        searchInput.addEventListener('input', function(e) {
+            state.searchQuery = e.target.value.toLowerCase().trim();
+            applyFilters();
         });
     }
     
@@ -108,6 +123,16 @@
     function cardMatchesFilters(card) {
         const cardCategories = (card.dataset.categories || '').split(',').filter(Boolean);
         const cardTags = (card.dataset.tags || '').split(',').filter(Boolean);
+        
+        // Check search query against title
+        if (state.searchQuery) {
+            const cardTitle = card.querySelector('.recipe-card-title');
+            const titleText = cardTitle ? cardTitle.textContent.toLowerCase() : '';
+            
+            if (!titleText.includes(state.searchQuery)) {
+                return false;
+            }
+        }
         
         // Check category filter
         const categoryMatch = state.activeCategory === 'all' || 
