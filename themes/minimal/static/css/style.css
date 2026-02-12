@@ -53,6 +53,7 @@ body {
             var(--gingham-red) 20px,
             var(--gingham-red) 40px
         );
+        background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
