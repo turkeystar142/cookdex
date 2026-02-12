@@ -8,11 +8,11 @@
 
 # Filter labels
 - id: filter_category
-  translation: "Categoría:"
+  translation: "Categoria:"
 - id: filter_flavor
   translation: "Sabor:"
 - id: filter_cooking_method
-  translation: "Método de Cocción:"
+  translation: "Metodo de Coccion:"
   
 # Category filters
 - id: category_all

@@ -1,8 +1,8 @@
 # Filter labels
 filter:
-  category: "Categoría:"
+  category: "Categoria:"
   flavor: "Sabor:"
-  cooking_method: "Método de Cocción:"
+  cooking_method: "Metodo de Coccion:"
   
 # Category filters
 category:

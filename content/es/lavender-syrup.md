@@ -2,7 +2,7 @@
 title: "Jarabe de Lavanda"
 date: 2026-02-11
 draft: false
-description: "Jarabe de lavanda fragante perfecto para te, cafe, cocteles o dulces."
+description: "Jarabe de lavanda fragante perfecto para té, cafe, cócteles o dulces."
 prepTime: "5 minutos"
 cookTime: "10 minutos"
 totalTime: "15 minutos"

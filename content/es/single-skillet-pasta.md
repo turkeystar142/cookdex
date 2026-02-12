@@ -1,5 +1,5 @@
 ---
-title: "Pasta en Una Sola Sartén"
+title: "Pasta Sarten"
 date: 2026-02-11
 draft: false
 description: "Pasta en una olla con tocino, salsa de tomate y crema."

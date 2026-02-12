@@ -22,7 +22,7 @@ tags:
 - 1/4 cucharadita de sal
 - 1/2 cucharadita de canela molida
 
-### Ingredientes Húmedos
+### Ingredientes Humedos
 - 3/4 taza de azúcar granulada (150 g)
 - 1/2 taza de mantequilla sin sal, derretida (115 g)
 - 2 huevos grandes, batidos

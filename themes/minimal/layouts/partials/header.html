@@ -1,11 +1,16 @@
 <header class="site-header">
-    <nav class="language-switcher">
-        {{ if .IsTranslated }}
-            {{ range .Translations }}
-                <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}">
-                    {{ if eq .Language.Lang "es" }}🇪🇸{{ else if eq .Language.Lang "en" }}🇺🇸{{ end }} {{ .Language.LanguageName }}
-                </a>
+    <div class="header-container">
+        <a href="{{ "/recipio" | relURL }}" class="site-title-link">
+            <h1 class="site-title">{{ .Site.Title }}</h1>
+        </a>
+        <nav class="language-switcher">
+            {{ if .IsTranslated }}
+                {{ range .Translations }}
+                    <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}">
+                        {{ if eq .Language.Lang "es" }}🇪🇸{{ else if eq .Language.Lang "en" }}🇺🇸{{ end }} {{ .Language.LanguageName }}
+                    </a>
+                {{ end }}
             {{ end }}
-        {{ end }}
-    </nav>
+        </nav>
+    </div>
 </header>

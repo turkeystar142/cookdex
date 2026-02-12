@@ -22,4 +22,4 @@ cooking_method:
   stovetop: "Stovetop"
   oven: "Oven"
   specialized: "Specialized"
-  as_is: "As-Is"
+  as_is: "No Cook"

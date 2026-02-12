@@ -1,10 +1,5 @@
 {{ define "main" }}
 <div class="container">
-    <div class="homepage-hero">
-        <h1 class="site-title">{{ .Site.Title }}</h1>
-        <p class="site-tagline">{{ .Content }}</p>
-    </div>
-    
     <button class="filter-toggle" id="filterToggle" aria-label="{{ i18n "filter_toggle" }}">
         <span class="filter-toggle-icon">⚙</span>
         <span class="filter-toggle-text">{{ i18n "filter_toggle" }}</span>
@@ -14,12 +9,12 @@
         <div class="filter-tray-overlay" id="filterTrayOverlay"></div>
         <div class="filter-tray-panel">
             <div class="filter-tray-header">
-                <h3 class="filter-tray-title">{{ i18n "filter_tray_title" }}</h3>
+                <h2 class="filter-tray-title">{{ i18n "filter_tray_title" }}</h2>
                 <button class="filter-tray-close" id="filterTrayClose" aria-label="{{ i18n "filter_tray_close" }}">×</button>
             </div>
             <div class="filter-container">
                 <div class="filter-group">
-                    <h4 class="filter-label">{{ i18n "filter_category" }}</h4>
+                    <h3 class="filter-label">{{ i18n "filter_category" }}</h3>
                     <div class="filter-buttons">
                         <button class="filter-btn active" data-filter-type="category" data-filter-value="all">{{ i18n "category_all" }}</button>
                         <button class="filter-btn" data-filter-type="category" data-filter-value="meal">{{ i18n "category_meal" }}</button>
@@ -29,7 +24,7 @@
                 </div>
                 
                 <div class="filter-group">
-                    <h4 class="filter-label">{{ i18n "filter_flavor" }}</h4>
+                    <h3 class="filter-label">{{ i18n "filter_flavor" }}</h3>
                     <div class="filter-buttons">
                         <button class="filter-btn" data-filter-type="tag" data-filter-value="savory">{{ i18n "flavor_savory" }}</button>
                         <button class="filter-btn" data-filter-type="tag" data-filter-value="sweet">{{ i18n "flavor_sweet" }}</button>
@@ -38,7 +33,7 @@
                 </div>
                 
                 <div class="filter-group">
-                    <h4 class="filter-label">{{ i18n "filter_cooking_method" }}</h4>
+                    <h3 class="filter-label">{{ i18n "filter_cooking_method" }}</h3>
                     <div class="filter-buttons">
                         <button class="filter-btn" data-filter-type="tag" data-filter-value="stovetop">{{ i18n "cooking_method_stovetop" }}</button>
                         <button class="filter-btn" data-filter-type="tag" data-filter-value="oven">{{ i18n "cooking_method_oven" }}</button>
@@ -64,7 +59,7 @@
             </div>
             {{ end }}
             <div class="recipe-card-content">
-                <h3 class="recipe-card-title">{{ .Title }}</h3>
+                <h2 class="recipe-card-title">{{ .Title }}</h2>
                 {{ if or .Params.prepTime .Params.cookTime }}
                 <div class="recipe-card-meta">
                     {{ if .Params.prepTime }}<span>⏱️ {{ .Params.prepTime }}</span>{{ end }}

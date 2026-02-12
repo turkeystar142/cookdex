@@ -14,7 +14,7 @@
             </div>
             {{ end }}
             <div class="recipe-card-content">
-                <h3 class="recipe-card-title">{{ .Title }}</h3>
+                <h2 class="recipe-card-title">{{ .Title }}</h2>
                 {{ if or .Params.prepTime .Params.cookTime }}
                 <div class="recipe-card-meta">
                     {{ if .Params.prepTime }}<span>⏱️ {{ .Params.prepTime }}</span>{{ end }}
