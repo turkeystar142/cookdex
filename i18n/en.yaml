@@ -10,6 +10,10 @@
 - id: search_label
   translation: "Search recipes by title"
 
+# Navigation
+- id: back_to_recipes
+  translation: "Back to all recipes"
+
 # Filter labels
 - id: filter_category
   translation: "Category:"
