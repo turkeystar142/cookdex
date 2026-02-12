@@ -1,5 +1,6 @@
 /* Color Variables */
 :root {
+    --white: #FFFFFF;
     --cream: #F5F1E8;
     --tan: #e4d3bb;
     --warm-brown: #8B7355;
@@ -36,7 +37,7 @@ body {
     font-family: var(--body-font);
     line-height: 1.6;
     color: var(--text-dark);
-    background-color: var(--cream);
+    background-color: var(--white);
     background-image: 
         repeating-linear-gradient(
             0deg,
