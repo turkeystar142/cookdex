@@ -3,7 +3,7 @@ title: "Cuban Bread"
 date: 2026-02-11
 draft: false
 description: "Traditional Cuban bread dough with a crispy crust."
-prepTime: "14 hours (12 overnight for starter)"
+prepTime: "14 hours"
 cookTime: "30-40 minutes"
 totalTime: "15 hours"
 yield: "2 loaves"

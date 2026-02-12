@@ -3,7 +3,7 @@ title: "Frijoles Negros"
 date: 2026-02-11
 draft: false
 description: "Frijoles negros tradicionales cocinados con vegetales aromáticos y especias."
-prepTime: "2 horas 15 minutos (incluye remojo)"
+prepTime: "2 horas 15 minutos"
 cookTime: "2-3 horas"
 totalTime: "4-5 horas"
 yield: "6-8 porciones"

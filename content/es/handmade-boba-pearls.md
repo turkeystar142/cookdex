@@ -4,7 +4,7 @@ date: 2026-02-11
 draft: false
 description: "Perlas de tapioca boba masticables hechas desde cero."
 prepTime: "30 minutos"
-cookTime: "40 minutos (20 min hirviendo + 20 min reposando)"
+cookTime: "40 minutos"
 totalTime: "70 minutos"
 yield: "2-3 porciones"
 categories:

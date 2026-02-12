@@ -124,9 +124,7 @@ a:hover {
 
 /* Filter Toggle Button */
 .filter-toggle {
-    position: fixed;
-    top: 80px;
-    left: 30px;
+    position: relative;
     background: var(--text-dark);
     color: var(--card-bg);
     border: none;
@@ -134,10 +132,10 @@ a:hover {
     padding: 12px 20px;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    z-index: 900;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 8px;
+    margin: 20px 0;
     font-family: var(--body-font);
     font-size: 0.95em;
     transition: all 0.2s ease;
@@ -545,8 +543,7 @@ footer p {
     }
     
     .filter-toggle {
-        top: 70px;
-        left: 15px;
+        margin: 15px 0;
         padding: 8px 12px;
         border-radius: 8px;
     }
@@ -586,8 +583,7 @@ footer p {
     }
     
     .filter-toggle {
-        top: 75px;
-        left: 12px;
+        margin: 12px 0;
         padding: 6px 10px;
         border-radius: 6px;
     }

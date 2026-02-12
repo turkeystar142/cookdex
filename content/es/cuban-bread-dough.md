@@ -3,7 +3,7 @@ title: "Pan Cubano"
 date: 2026-02-11
 draft: false
 description: "Masa de pan cubano tradicional con corteza crujiente."
-prepTime: "14 horas (12 durante la noche para el iniciador)"
+prepTime: "14 horas"
 cookTime: "30-40 minutos"
 totalTime: "15 horas"
 yield: "2 barras"

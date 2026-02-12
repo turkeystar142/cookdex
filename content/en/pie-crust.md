@@ -4,7 +4,7 @@ date: 2026-02-11
 draft: false
 description: "Flaky and buttery pie crust that's perfect for any pie."
 prepTime: "10 minutes"
-cookTime: "20 minutes (ready to fill)"
+cookTime: "20 minutes"
 totalTime: "30 minutes"
 yield: "1 pie crust"
 categories:

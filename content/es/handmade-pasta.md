@@ -3,7 +3,7 @@ title: "Pasta Casera"
 date: 2026-02-11
 draft: false
 description: "Pasta casera simple usando una proporción de 1:1 de harina a huevos."
-prepTime: "45 minutos (incluye reposo)"
+prepTime: "45 minutos"
 cookTime: "3-5 minutos"
 totalTime: "50 minutos"
 yield: "Varía (100g harina : 1 huevo)"

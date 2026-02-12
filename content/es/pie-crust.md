@@ -4,7 +4,7 @@ date: 2026-02-11
 draft: false
 description: "Masa para tarta hojaldrada y mantecosa que es perfecta para cualquier tarta."
 prepTime: "10 minutos"
-cookTime: "20 minutos (lista para rellenar)"
+cookTime: "20 minutos"
 totalTime: "30 minutos"
 yield: "1 masa para tarta"
 categories:

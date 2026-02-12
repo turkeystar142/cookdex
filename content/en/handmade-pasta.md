@@ -3,7 +3,7 @@ title: "Handmade Pasta"
 date: 2026-02-11
 draft: false
 description: "Simple handmade pasta using a 1:1 ratio of flour to eggs."
-prepTime: "45 minutes (includes resting)"
+prepTime: "45 minutes"
 cookTime: "3-5 minutes"
 totalTime: "50 minutes"
 yield: "Varies (100g flour : 1 egg)"

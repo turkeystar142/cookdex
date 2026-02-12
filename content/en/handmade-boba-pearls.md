@@ -4,7 +4,7 @@ date: 2026-02-11
 draft: false
 description: "Chewy tapioca boba pearls made from scratch."
 prepTime: "30 minutes"
-cookTime: "40 minutes (20 min boiling + 20 min resting)"
+cookTime: "40 minutes"
 totalTime: "70 minutes"
 yield: "2-3 servings"
 categories:
