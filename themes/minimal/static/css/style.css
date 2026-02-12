@@ -373,8 +373,8 @@ a:hover {
     gap: 5px;
 }
 
-/* Recipe Card Flip Container */
-.recipe-flip-container {
+/* Recipe Card Container */
+.recipe-container {
     max-width: 900px;
     margin: 0 auto;
     perspective: 1000px;

@@ -1,4 +1,4 @@
 name = "Rotodex"
 license = "MIT"
-description = "A cozy recipe theme with flippable index cards and picnic table aesthetic"
+description = "A cozy recipe theme with index cards recipes and picnic table aesthetic"
 min_version = "0.120.0"
