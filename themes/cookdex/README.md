@@ -1,6 +1,6 @@
 # Cookdex
 
-A cozy recipe theme for Hugo with an index card aesthetic and picnic table vibe. Features recipe filtering, search functionality, multilingual support, and customizable cursors.
+A cozy recipe theme for Hugo with an index card aesthetic and picnic table vibe. Features recipe filtering, search functionality, multilingual support, customizable cursors, and a customizable gingham background pattern.
 
 ## Features
 
@@ -9,6 +9,7 @@ A cozy recipe theme for Hugo with an index card aesthetic and picnic table vibe.
 - **Search Functionality**: Real-time recipe search
 - **Multilingual Support**: Built-in internationalization (English and Spanish included)
 - **Custom Cursors**: Fun food-themed cursor options for desktop users
+- **Gingham Customizer**: Personalize the background pattern color, opacity, and stripe thickness
 - **Responsive Design**: Simple recipe cards that work on all devices
 - **Recipe Metadata**: Display prep time, cook time, total time, and yield
 - **Clean Typography**: Custom Leila font for a handwritten aesthetic
@@ -159,6 +160,18 @@ Organize your recipe markdown with standard sections:
 
 The theme uses the Leila font family for a handwritten aesthetic. The fonts are included in `static/fonts/`.
 
+### Gingham Pattern Customizer
+
+Desktop users can personalize the gingham background pattern using the palette button in the bottom right corner (stacked above the cursor selector). Customization options include:
+
+- **Color**: Choose any color using the color picker
+- **Opacity**: Adjust from 0-100% for subtle or bold patterns
+- **Stripe Thickness**: Control the size of the gingham checks (10-50px)
+- **Live Preview**: See changes in real-time before applying
+- **Reset**: Restore default pattern (red at 15% opacity, 20px stripes)
+
+Settings are automatically saved to localStorage and persist across sessions. A hard refresh (Ctrl+Shift+R / Cmd+Shift+R) will reset to defaults.
+
 ### Custom Cursors
 
 Desktop users can choose from several food-themed cursors:
@@ -200,10 +213,11 @@ To add additional languages:
 
 ### JavaScript Modules
 
-The theme includes three main JavaScript modules:
+The theme includes four main JavaScript modules:
 
 - `filter.js` - Recipe filtering and search functionality
 - `cursor-selector.js` - Custom cursor selection interface
+- `gingham-customizer.js` - Background pattern customization interface
 - `language-persistence.js` - Language preference management
 
 ### External Dependencies
@@ -236,6 +250,7 @@ This theme is released under the MIT License. See [LICENSE](LICENSE) for details
 - Recipe detail page
 - Filter tray
 - Cursor selector
+- Gingham customizer
 
 ## Support
 

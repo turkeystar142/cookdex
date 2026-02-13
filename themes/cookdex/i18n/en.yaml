@@ -56,3 +56,14 @@ cursor_cherry: "Cherry"
 cursor_coffee: "Coffee"
 cursor_muffin: "Muffin"
 cursor_pear: "Pear"
+
+# Gingham customizer
+gingham_customizer_toggle: "Customize gingham"
+gingham_customizer_title: "Gingham Pattern"
+gingham_customizer_close: "Close gingham customizer"
+gingham_color_label: "Color"
+gingham_opacity_label: "Opacity"
+gingham_thickness_label: "Stripe Thickness"
+gingham_preview_label: "Preview"
+gingham_reset_button: "Reset to Default"
+
