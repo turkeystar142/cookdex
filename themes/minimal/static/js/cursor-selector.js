@@ -16,10 +16,11 @@
     }
     
     // Save cursor selection
-    function saveCursorSelection(cursorUrl, cursorName) {
+    function saveCursorSelection(cursorUrl, cursorName, handUrl) {
         localStorage.setItem(STORAGE_KEY, JSON.stringify({
             url: cursorUrl,
-            name: cursorName
+            name: cursorName,
+            handUrl: handUrl
         }));
     }
     
@@ -47,7 +48,7 @@
     }
     
     // Apply cursor from URL
-    function applyCursor(cursorUrl) {
+    function applyCursor(cursorUrl, handUrl) {
         let styleEl = document.getElementById('custom-cursor-style');
         if (!styleEl) {
             styleEl = document.createElement('style');
@@ -55,11 +56,26 @@
             document.head.appendChild(styleEl);
         }
         
-        styleEl.textContent = `
+        // Base cursor for all elements
+        let cssContent = `
             body, body * {
                 cursor: url('${cursorUrl}'), auto !important;
             }
         `;
+        
+        // Add hand cursor for interactive elements if provided
+        if (handUrl) {
+            cssContent += `
+            a, button, input[type="button"], input[type="submit"], 
+            input[type="reset"], select, [role="button"], 
+            .filter-btn, .recipe-card-content, .recipe-card-image, .back-link, .cursor-option,
+            .filter-toggle, .site-title, .cursor-selector-toggle, .cursor-selector-close {
+                cursor: url('${handUrl}'), pointer !important;
+            }
+            `;
+        }
+        
+        styleEl.textContent = cssContent;
     }
     
     // Initialize when DOM is ready
@@ -81,11 +97,18 @@
         // Load and apply saved cursor on page load
         const savedCursor = loadCursorSelection();
         if (savedCursor && savedCursor.url) {
-            applyCursor(savedCursor.url);
+            applyCursor(savedCursor.url, savedCursor.handUrl);
             
             // Mark the saved cursor as active in the panel
             cursorOptions.forEach(opt => {
                 if (opt.dataset.cursor === savedCursor.name) {
+                    opt.classList.add('active');
+                }
+            });
+        } else {
+            // No saved cursor - mark default as active
+            cursorOptions.forEach(opt => {
+                if (opt.dataset.cursor === 'default') {
                     opt.classList.add('active');
                 }
             });
@@ -116,19 +139,38 @@
         cursorOptions.forEach(option => {
             option.addEventListener('click', function() {
                 const cursorName = this.dataset.cursor;
+                
+                // Update active state
+                cursorOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Handle default cursor (remove custom cursor)
+                if (cursorName === 'default') {
+                    // Remove custom cursor style
+                    const styleEl = document.getElementById('custom-cursor-style');
+                    if (styleEl) {
+                        styleEl.remove();
+                    }
+                    
+                    // Clear localStorage
+                    localStorage.removeItem(STORAGE_KEY);
+                    return;
+                }
+                
+                // Handle custom cursor selection
                 const previewImg = this.querySelector('.cursor-preview');
                 const cursorUrl = previewImg ? previewImg.src : '';
                 
                 if (cursorUrl) {
-                    // Update active state
-                    cursorOptions.forEach(opt => opt.classList.remove('active'));
-                    this.classList.add('active');
+                    // Compute hand cursor URL from base path
+                    const basePath = cursorUrl.substring(0, cursorUrl.lastIndexOf('/') + 1);
+                    const handUrl = basePath + 'hand.png';
                     
-                    // Apply cursor
-                    applyCursor(cursorUrl);
+                    // Apply both cursors
+                    applyCursor(cursorUrl, handUrl);
                     
-                    // Save selection
-                    saveCursorSelection(cursorUrl, cursorName);
+                    // Save both cursors
+                    saveCursorSelection(cursorUrl, cursorName, handUrl);
                 }
             });
             

@@ -835,6 +835,23 @@ footer p {
     font-weight: 500;
 }
 
+/* Icon-based cursor preview (for default option) */
+.cursor-preview-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: var(--text-dark);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Special styling for default cursor option when active */
+.cursor-option-default.active .cursor-preview-icon {
+    color: var(--card-bg);
+}
+
 /* Hide on mobile/tablet */
 @media (max-width: 1024px) {
     .cursor-selector-toggle {
