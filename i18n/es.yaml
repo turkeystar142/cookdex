@@ -49,3 +49,29 @@
   translation: "Especializado"
 - id: cooking_method_as_is
   translation: "Sin Cocinar"
+
+# Cursor selector UI
+- id: cursor_selector_toggle
+  translation: "Cambiar cursor"
+- id: cursor_selector_title
+  translation: "Elige Tu Cursor"
+- id: cursor_selector_close
+  translation: "Cerrar selector de cursor"
+
+# Cursor option names
+- id: cursor_default
+  translation: "Predeterminado"
+- id: cursor_apple
+  translation: "Manzana"
+- id: cursor_berry
+  translation: "Fresa"
+- id: cursor_cake
+  translation: "Pastel"
+- id: cursor_cherry
+  translation: "Cereza"
+- id: cursor_coffee
+  translation: "Café"
+- id: cursor_muffin
+  translation: "Magdalena"
+- id: cursor_pear
+  translation: "Pera"

@@ -95,6 +95,10 @@ main {
     display: block;
 }
 
+.site-title-link:hover {
+    text-decoration: none;
+}
+
 .site-title {
     font-size: 2.5em;
     margin: 0;
@@ -382,6 +386,7 @@ a:hover {
 .recipe-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px var(--card-shadow);
+    text-decoration: none;
 }
 
 .recipe-card-image {

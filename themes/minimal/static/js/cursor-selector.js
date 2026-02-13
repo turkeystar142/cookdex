@@ -67,9 +67,7 @@
         if (handUrl) {
             cssContent += `
             a, button, input[type="button"], input[type="submit"], 
-            input[type="reset"], select, [role="button"], 
-            .filter-btn, .recipe-card-content, .recipe-card-image, .back-link, .cursor-option,
-            .filter-toggle, .site-title, .cursor-selector-toggle, .cursor-selector-close {
+            input[type="reset"], select, [role="button"], .hover-pointer {
                 cursor: url('${handUrl}'), pointer !important;
             }
             `;
