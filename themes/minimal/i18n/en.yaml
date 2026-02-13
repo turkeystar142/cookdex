@@ -10,12 +10,14 @@ category:
   meal: "Meal"
   snack: "Snack"
   topping: "Topping"
+  drink: "Drink"
 
 # Flavor tags
 flavor:
   savory: "Savory"
   sweet: "Sweet"
   neutral: "Neutral"
+  sour: "Sour"
 
 # Cooking method tags
 cooking_method:
@@ -23,3 +25,34 @@ cooking_method:
   oven: "Oven"
   specialized: "Specialized"
   as_is: "No Cook"
+
+# Recipe meta labels
+recipe_meta:
+  prep: "Prep:"
+  cook: "Cook:"
+  total: "Total:"
+  yield: "Yield:"
+
+# Navigation
+back_to_recipes: "Back to recipes"
+
+# Search and filter UI
+search_placeholder: "Search recipes..."
+search_label: "Search recipes"
+filter_toggle: "Filters"
+filter_tray_title: "Filter Recipes"
+filter_tray_close: "Close filters"
+filter_clear_all: "Clear All Filters"
+
+# Cursor selector
+cursor_selector_toggle: "Change cursor"
+cursor_selector_title: "Choose Your Cursor"
+cursor_selector_close: "Close cursor selector"
+cursor_default: "Default"
+cursor_apple: "Apple"
+cursor_berry: "Berry"
+cursor_cake: "Cake"
+cursor_cherry: "Cherry"
+cursor_coffee: "Coffee"
+cursor_muffin: "Muffin"
+cursor_pear: "Pear"

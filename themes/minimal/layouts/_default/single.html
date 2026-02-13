@@ -2,7 +2,7 @@
 <div class="recipe-container">
     <article class="recipe-card-single">
         <div class="recipe-header">
-            <a href="/recipio" class="hover-pointer back-link">
+            <a href="{{ .Site.Home.RelPermalink }}" class="hover-pointer back-link">
                 <span class="hover-pointer arrow-left"></span>
                 <span class="sr-only">{{ i18n "back_to_recipes" }}</span>
             </a>
@@ -15,10 +15,10 @@
         
         {{ if or .Params.prepTime .Params.cookTime .Params.totalTime .Params.yield }}
         <div class="recipe-meta">
-            {{ if .Params.prepTime }}<span><i class="fa-regular fa-clock" aria-hidden="true"></i> Prep: {{ .Params.prepTime }}</span>{{ end }}
-            {{ if .Params.cookTime }}<span><i class="fa-solid fa-fire-burner" aria-hidden="true"></i> Cook: {{ .Params.cookTime }}</span>{{ end }}
-            {{ if .Params.totalTime }}<span><i class="fa-regular fa-clock" aria-hidden="true"></i> Total: {{ .Params.totalTime }}</span>{{ end }}
-            {{ if .Params.yield }}<span><i class="fa-solid fa-utensils" aria-hidden="true"></i> Yield: {{ .Params.yield }}</span>{{ end }}
+            {{ if .Params.prepTime }}<span><i class="fa-regular fa-clock" aria-hidden="true"></i> {{ i18n "recipe_meta.prep" }} {{ .Params.prepTime }}</span>{{ end }}
+            {{ if .Params.cookTime }}<span><i class="fa-solid fa-fire-burner" aria-hidden="true"></i> {{ i18n "recipe_meta.cook" }} {{ .Params.cookTime }}</span>{{ end }}
+            {{ if .Params.totalTime }}<span><i class="fa-regular fa-clock" aria-hidden="true"></i> {{ i18n "recipe_meta.total" }} {{ .Params.totalTime }}</span>{{ end }}
+            {{ if .Params.yield }}<span><i class="fa-solid fa-utensils" aria-hidden="true"></i> {{ i18n "recipe_meta.yield" }} {{ .Params.yield }}</span>{{ end }}
         </div>
         {{ end }}
         

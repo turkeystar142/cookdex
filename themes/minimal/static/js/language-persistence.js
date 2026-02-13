@@ -45,7 +45,7 @@
     // Transform URL to target language
     function getLanguageUrl(targetLang) {
         const currentPath = window.location.pathname;
-        const baseURL = '/recipio';
+        const baseURL = document.documentElement.getAttribute('data-base-url') || '';
         
         // Remove base URL to get relative path
         let relativePath = currentPath.replace(baseURL, '');

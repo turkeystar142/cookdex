@@ -10,12 +10,14 @@ category:
   meal: "Comida"
   snack: "Merienda"
   topping: "Cobertura"
+  drink: "Bebida"
 
 # Flavor tags
 flavor:
   savory: "Salado"
   sweet: "Dulce"
   neutral: "Neutral"
+  sour: "Ágrio"
 
 # Cooking method tags
 cooking_method:
@@ -23,3 +25,34 @@ cooking_method:
   oven: "Horno"
   specialized: "Especializado"
   as_is: "Sin Cocinar"
+
+# Recipe meta labels
+recipe_meta:
+  prep: "Preparación:"
+  cook: "Cocción:"
+  total: "Total:"
+  yield: "Rinde:"
+
+# Navigation
+back_to_recipes: "Volver a recetas"
+
+# Search and filter UI
+search_placeholder: "Buscar recetas..."
+search_label: "Buscar recetas"
+filter_toggle: "Filtros"
+filter_tray_title: "Filtrar Recetas"
+filter_tray_close: "Cerrar filtros"
+filter_clear_all: "Limpiar Filtros"
+
+# Cursor selector
+cursor_selector_toggle: "Cambiar cursor"
+cursor_selector_title: "Elige Tu Cursor"
+cursor_selector_close: "Cerrar selector de cursor"
+cursor_default: "Predeterminado"
+cursor_apple: "Manzana"
+cursor_berry: "Baya"
+cursor_cake: "Pastel"
+cursor_cherry: "Cereza"
+cursor_coffee: "Café"
+cursor_muffin: "Magdalena"
+cursor_pear: "Pera"
