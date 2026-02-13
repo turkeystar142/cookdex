@@ -14,5 +14,53 @@
     </main>
     {{ partial "footer.html" . }}
     <script src="{{ "js/filter.js" | relURL }}"></script>
+    
+    <!-- Cursor Selector Button (Desktop Only) -->
+    <button class="cursor-selector-toggle" id="cursorSelectorToggle" aria-label="Change cursor">
+        <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i>
+    </button>
+
+    <!-- Cursor Selector Tray -->
+    <div class="cursor-selector-tray" id="cursorSelectorTray">
+        <div class="cursor-selector-overlay" id="cursorSelectorOverlay"></div>
+        <div class="cursor-selector-panel">
+            <div class="cursor-selector-header">
+                <h2 class="cursor-selector-title">Choose Your Cursor</h2>
+                <button class="cursor-selector-close" id="cursorSelectorClose" aria-label="Close cursor selector">×</button>
+            </div>
+            <div class="cursor-selector-container">
+                <div class="cursor-option" data-cursor="apple">
+                    <img src="{{ "images/cursors/apple.png" | relURL }}" alt="Apple cursor" class="cursor-preview">
+                    <span class="cursor-name">Apple</span>
+                </div>
+                <div class="cursor-option" data-cursor="berry">
+                    <img src="{{ "images/cursors/berry.gif" | relURL }}" alt="Berry cursor" class="cursor-preview">
+                    <span class="cursor-name">Berry</span>
+                </div>
+                <div class="cursor-option" data-cursor="cake">
+                    <img src="{{ "images/cursors/cake.png" | relURL }}" alt="Cake cursor" class="cursor-preview">
+                    <span class="cursor-name">Cake</span>
+                </div>
+                <div class="cursor-option" data-cursor="cherry">
+                    <img src="{{ "images/cursors/cherry.gif" | relURL }}" alt="Cherry cursor" class="cursor-preview">
+                    <span class="cursor-name">Cherry</span>
+                </div>
+                <div class="cursor-option" data-cursor="coffee">
+                    <img src="{{ "images/cursors/coffee.png" | relURL }}" alt="Coffee cursor" class="cursor-preview">
+                    <span class="cursor-name">Coffee</span>
+                </div>
+                <div class="cursor-option" data-cursor="muffin">
+                    <img src="{{ "images/cursors/muffin.png" | relURL }}" alt="Muffin cursor" class="cursor-preview">
+                    <span class="cursor-name">Muffin</span>
+                </div>
+                <div class="cursor-option" data-cursor="pear">
+                    <img src="{{ "images/cursors/pear.png" | relURL }}" alt="Pear cursor" class="cursor-preview">
+                    <span class="cursor-name">Pear</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ "js/cursor-selector.js" | relURL }}"></script>
 </body>
 </html>
