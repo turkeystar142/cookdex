@@ -44,32 +44,21 @@
     
     // Transform URL to target language
     function getLanguageUrl(targetLang) {
-        const currentPath = window.location.pathname;
-        const baseURL = document.documentElement.getAttribute('data-base-url') || '';
-        
-        // Remove base URL to get relative path
-        let relativePath = currentPath.replace(baseURL, '');
-        
-        // Remove leading slash if present
-        if (relativePath.startsWith('/')) {
-            relativePath = relativePath.substring(1);
+        let path = window.location.pathname;
+
+        if (path.startsWith('/')) {
+            path = path.substring(1);
         }
         
-        // Check if current path has language prefix
-        const hasLangPrefix = relativePath.startsWith('es/') || relativePath.startsWith('en/');
-        
-        if (hasLangPrefix) {
-            // Remove existing language prefix
-            relativePath = relativePath.substring(3);
+        // Remove existing language prefix
+        if (path.startsWith('es/') || path.startsWith('en/')) {
+            path = path.substring(3);
         }
-        
-        // Build new URL based on target language
+
         if (targetLang === 'en' || targetLang === 'en-us') {
-            // English is the default language, no prefix
-            return baseURL + '/' + relativePath;
+            return '/' + path;
         } else {
-            // Other languages get prefixed
-            return baseURL + '/' + targetLang + '/' + relativePath;
+            return '/' + targetLang + '/' + path;
         }
     }
     
