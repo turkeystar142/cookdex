@@ -33,6 +33,8 @@
   translation: "Merienda"
 - id: category_topping
   translation: "Cobertura"
+- id: category_drink
+  translation: "Bebida"
 
 # Flavor tags
 - id: flavor_savory
@@ -41,6 +43,8 @@
   translation: "Dulce"
 - id: flavor_neutral
   translation: "Neutral"
+- id: flavor_sour
+  translation: "Ágrio"
 
 # Cooking method tags
 - id: cooking_method_stovetop

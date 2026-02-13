@@ -33,6 +33,8 @@
   translation: "Snack"
 - id: category_topping
   translation: "Topping"
+- id: category_drink
+  translation: "Drink"
 
 # Flavor tags
 - id: flavor_savory
@@ -41,6 +43,8 @@
   translation: "Sweet"
 - id: flavor_neutral
   translation: "Neutral"
+- id: flavor_sour
+  translation: "Sour"
 
 # Cooking method tags
 - id: cooking_method_stovetop

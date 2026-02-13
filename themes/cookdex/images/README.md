@@ -31,8 +31,8 @@ To create these screenshots:
 
 Make sure your site has example content that shows off the theme's features:
 - Multiple recipes
-- Different categories (meal, snack, topping)
-- Various tags (sweet, savory, different cooking methods)
+- Different categories (meal, snack, topping, drink)
+- Various tags (sweet, savory, sour, different cooking methods)
 - Both languages if multilingual
 
 Place the screenshot files directly in this directory (`themes/cookdex/images/`).
