@@ -1,4 +1,4 @@
-baseURL = 'https://turkeystar142.github.io/recipio/'
+baseURL = 'https://turkeystar142.github.io/cookdex/'
 theme = 'cookdex'
 defaultContentLanguage = 'en'
 
