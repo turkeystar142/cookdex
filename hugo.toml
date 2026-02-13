@@ -1,17 +1,17 @@
 baseURL = 'https://turkeystar142.github.io/recipio/'
-theme = 'minimal'
+theme = 'cookdex'
 defaultContentLanguage = 'en'
 
 [languages.en]
   languageCode = 'en-us'
   languageName = 'English'
-  title = 'Recipio'
+  title = 'Cookdex'
   weight = 1
   contentDir = 'content/en'
 
 [languages.es]
   languageCode = 'es'
   languageName = 'Español'
-  title = 'Recipio'
+  title = 'Cookdex'
   weight = 2
   contentDir = 'content/es'

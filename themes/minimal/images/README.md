@@ -35,4 +35,4 @@ Make sure your site has example content that shows off the theme's features:
 - Various tags (sweet, savory, different cooking methods)
 - Both languages if multilingual
 
-Place the screenshot files directly in this directory (`themes/minimal/images/`).
+Place the screenshot files directly in this directory (`themes/cookdex/images/`).
