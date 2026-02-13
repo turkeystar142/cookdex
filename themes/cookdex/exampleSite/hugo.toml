@@ -1,17 +1,18 @@
-baseURL = 'https://turkeystar142.github.io/recipio/'
+baseURL = 'https://example.com/'
 theme = 'cookdex'
 defaultContentLanguage = 'en'
+title = 'Cookdex Recipe Collection'
 
 [languages.en]
   languageCode = 'en-us'
   languageName = 'English'
-  title = 'Cookdex'
+  title = 'Cookdex Recipe Collection'
   weight = 1
   contentDir = 'content/en'
 
 [languages.es]
   languageCode = 'es'
   languageName = 'Español'
-  title = 'Cookdex'
+  title = 'Colección de Recetas Cookdex'
   weight = 2
   contentDir = 'content/es'
