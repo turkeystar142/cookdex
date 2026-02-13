@@ -5,6 +5,8 @@
   translation: "Filter Recipes"
 - id: filter_tray_close
   translation: "Close"
+- id: filter_clear_all
+  translation: "Clear all Filters"
 - id: search_placeholder
   translation: "Search recipes..."
 - id: search_label

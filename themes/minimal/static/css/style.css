@@ -365,6 +365,44 @@ a:hover {
     outline-offset: 2px;
 }
 
+/* Filter Clear Button */
+.filter-clear-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid var(--tan);
+}
+
+.filter-clear-btn {
+    font-family: var(--body-font);
+    background: var(--cream);
+    border: 2px solid var(--tan);
+    color: var(--text-dark);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: all 0.2s ease;
+}
+
+.filter-clear-btn:not(:disabled):hover {
+    background: var(--tan);
+    border-color: var(--warm-brown);
+    transform: translateY(-1px);
+}
+
+.filter-clear-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.filter-clear-btn:focus {
+    outline: 2px solid var(--warm-brown);
+    outline-offset: 2px;
+}
+
 /* Recipe Grid (Homepage) */
 .recipe-grid {
     display: grid;

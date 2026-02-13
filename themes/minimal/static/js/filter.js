@@ -53,6 +53,15 @@
         filterButtons.forEach(button => {
             button.addEventListener('click', handleFilterClick);
         });
+        
+        // Initialize clear button
+        const clearButton = document.getElementById('filterClearBtn');
+        if (clearButton) {
+            clearButton.addEventListener('click', clearAllFilters);
+        }
+        
+        // Set initial state of clear button
+        updateClearButtonState();
     }
     
     function initializeSearch() {
@@ -99,6 +108,9 @@
         
         // Update state
         state.activeCategory = value;
+        
+        // Update clear button state
+        updateClearButtonState();
     }
     
     function handleTagFilter(button, value) {
@@ -112,6 +124,9 @@
             button.classList.add('active');
             button.setAttribute('aria-pressed', 'true');
         }
+        
+        // Update clear button state
+        updateClearButtonState();
     }
     
     function applyFilters() {
@@ -157,5 +172,49 @@
         }
         
         return true;
+    }
+    
+    function clearAllFilters() {
+        // Reset state
+        state.activeCategory = 'all';
+        state.activeTags.clear();
+        
+        // Update UI - remove active class from all tag buttons
+        const tagButtons = document.querySelectorAll('[data-filter-type="tag"]');
+        tagButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+        });
+        
+        // Update UI - add active class to "all" category button
+        const categoryButtons = document.querySelectorAll('[data-filter-type="category"]');
+        categoryButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+        });
+        
+        const allButton = document.querySelector('[data-filter-type="category"][data-filter-value="all"]');
+        if (allButton) {
+            allButton.classList.add('active');
+            allButton.setAttribute('aria-pressed', 'true');
+        }
+        
+        // Apply filters and update button state
+        applyFilters();
+        updateClearButtonState();
+    }
+    
+    function updateClearButtonState() {
+        const clearButton = document.getElementById('filterClearBtn');
+        
+        if (!clearButton) {
+            return;
+        }
+        
+        // Check if any filters are active
+        const hasActiveFilters = state.activeCategory !== 'all' || state.activeTags.size > 0;
+        
+        // Enable/disable button based on filter state
+        clearButton.disabled = !hasActiveFilters;
     }
 })();
