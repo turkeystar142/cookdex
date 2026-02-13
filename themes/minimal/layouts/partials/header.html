@@ -24,7 +24,7 @@
         <nav class="language-switcher">
             {{ if .IsTranslated }}
                 {{ range .Translations }}
-                    <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}">
+                    <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}" class="language-link" data-lang="{{ .Language.Lang }}">
                         {{ if eq .Language.Lang "es" }}🇪🇸{{ else if eq .Language.Lang "en" }}🇺🇸{{ end }} {{ .Language.LanguageName }}
                     </a>
                 {{ end }}
