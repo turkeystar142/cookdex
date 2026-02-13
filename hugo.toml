@@ -1,4 +1,4 @@
-baseURL = 'https://turkeystar142.github.io/cookdex/'
+baseURL = 'nuna.moe'
 theme = 'cookdex'
 defaultContentLanguage = 'en'
 
@@ -10,6 +10,11 @@ defaultContentLanguage = 'en'
   contentDir = 'content/en'
 
 [languages.es]
+  languageCode = 'es'
+  languageName = 'Español'
+  title = 'Cookdex'
+  weight = 2
+  contentDir = 'content/es'
   languageCode = 'es'
   languageName = 'Español'
   title = 'Cookdex'
