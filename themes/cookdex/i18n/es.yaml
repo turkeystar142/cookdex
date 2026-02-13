@@ -56,3 +56,14 @@ cursor_cherry: "Cereza"
 cursor_coffee: "Café"
 cursor_muffin: "Magdalena"
 cursor_pear: "Pera"
+
+# Gingham customizer
+gingham_customizer_toggle: "Personalizar guinga"
+gingham_customizer_title: "Patron de Guinga"
+gingham_customizer_close: "Cerrar personalizador de guinga"
+gingham_color_label: "Color"
+gingham_opacity_label: "Opacidad"
+gingham_thickness_label: "Grosor de Rayas"
+gingham_preview_label: "Vista Previa"
+gingham_reset_button: "Restablecer Predeterminado"
+

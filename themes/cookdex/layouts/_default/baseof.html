@@ -16,6 +16,84 @@
     {{ partial "footer.html" . }}
     <script src="{{ "js/filter.js" | relURL }}"></script>
     
+    <!-- Gingham Customizer Button (Desktop Only) -->
+    <button class="gingham-customizer-toggle" id="ginghamCustomizerToggle" aria-label="{{ i18n "gingham_customizer_toggle" }}">
+        <i class="hover-pointer fa-solid fa-palette" aria-hidden="true"></i>
+    </button>
+
+    <!-- Gingham Customizer Tray -->
+    <div class="gingham-customizer-tray" id="ginghamCustomizerTray">
+        <div class="gingham-customizer-overlay" id="ginghamCustomizerOverlay"></div>
+        <div class="gingham-customizer-panel">
+            <div class="gingham-customizer-header">
+                <h2 class="gingham-customizer-title">{{ i18n "gingham_customizer_title" }}</h2>
+                <button class="gingham-customizer-close" id="ginghamCustomizerClose" aria-label="{{ i18n "gingham_customizer_close" }}">
+                    <i class="hover-pointer fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="gingham-customizer-container">
+                <!-- Color Picker -->
+                <div class="gingham-control-group">
+                    <label for="ginghamColorInput" class="gingham-control-label">
+                        {{ i18n "gingham_color_label" }}
+                    </label>
+                    <div class="gingham-color-input-wrapper">
+                        <input type="color" 
+                               id="ginghamColorInput" 
+                               class="hover-pointer gingham-color-input" 
+                               value="#b45046"
+                               aria-label="{{ i18n "gingham_color_label" }}">
+                    </div>
+                </div>
+
+                <!-- Opacity Slider -->
+                <div class="gingham-control-group">
+                    <label for="ginghamOpacityInput" class="gingham-control-label">
+                        {{ i18n "gingham_opacity_label" }}<span class="gingham-control-value" id="ginghamOpacityValue">15%</span>
+                    </label>
+                    <div class="hover-pointer gingham-slider-wrapper">
+                        <input type="range" 
+                               id="ginghamOpacityInput" 
+                               class="hover-pointer gingham-slider" 
+                               min="0" 
+                               max="100" 
+                               step="1" 
+                               value="15"
+                               aria-label="{{ i18n "gingham_opacity_label" }}">
+                    </div>
+                </div>
+
+                <!-- Thickness Slider -->
+                <div class="gingham-control-group">
+                    <label for="ginghamThicknessInput" class="gingham-control-label">
+                        {{ i18n "gingham_thickness_label" }}<span class="gingham-control-value" id="ginghamThicknessValue">20px</span>
+                    </label>
+                    <div class="hover-pointer gingham-slider-wrapper">
+                        <input type="range" 
+                               id="ginghamThicknessInput" 
+                               class="hover-pointer gingham-slider" 
+                               min="10" 
+                               max="50" 
+                               step="1" 
+                               value="20"
+                               aria-label="{{ i18n "gingham_thickness_label" }}">
+                    </div>
+                </div>
+
+                <!-- Preview -->
+                <div class="gingham-preview">
+                    <span class="gingham-preview-label">{{ i18n "gingham_preview_label" }}</span>
+                    <div class="gingham-preview-swatch" id="ginghamPreviewSwatch"></div>
+                </div>
+
+                <!-- Reset Button -->
+                <button class="hover-pointer gingham-reset-btn" id="ginghamResetBtn">
+                    {{ i18n "gingham_reset_button" }}
+                </button>
+            </div>
+        </div>
+    </div>
+    
     <!-- Cursor Selector Button (Desktop Only) -->
     <button class="cursor-selector-toggle" id="cursorSelectorToggle" aria-label="{{ i18n "cursor_selector_toggle" }}">
         <i class="hover-pointer fa-solid fa-arrow-pointer" aria-hidden="true"></i>
@@ -69,6 +147,7 @@
     </div>
 
     <script src="{{ "js/cursor-selector.js" | relURL }}"></script>
+    <script src="{{ "js/gingham-customizer.js" | relURL }}"></script>
     <script src="{{ "js/language-persistence.js" | relURL }}"></script>
 </body>
 </html>
