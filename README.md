@@ -1,6 +1,6 @@
-# Recipio
+# Cookdex
 
-A simple recipe website built with Hugo.
+A simple recipe website built with Hugo. 
 
 ## Quick Start
 
