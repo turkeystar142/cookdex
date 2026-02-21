@@ -34,7 +34,7 @@ cd your-hugo-site
 git submodule add https://github.com/turkeystar142/cookdex.git themes/cookdex
 ```
 
-### Option 2: Clone
+### Option 2: Clone Repo
 
 ```bash
 cd your-hugo-site/themes
