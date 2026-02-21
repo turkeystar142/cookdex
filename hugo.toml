@@ -1,5 +1,5 @@
 baseURL = 'https://cookdex.nuna.moe/'
-theme = 'cookdex'
+theme = 'cookdex-theme'
 defaultContentLanguage = 'en'
 
 [languages.en]
