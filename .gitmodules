@@ -1,0 +1,3 @@
+[submodule "themes/cookdex-theme"]
+	path = themes/cookdex-theme
+	url = https://github.com/turkeystar142/cookdex-theme.git
