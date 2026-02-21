@@ -3,8 +3,8 @@ license = "MIT"
 licenselink = "https://github.com/turkeystar142/cookdex/blob/main/LICENSE"
 description = "A cozy recipe theme with index card recipes and picnic table aesthetic"
 homepage = "https://github.com/turkeystar142/cookdex"
-demosite = "https://turkeystar142.github.io/cookdex-demo/"
-tags = ["recipe", "food", "cooking", "multilingual", "responsive", "cards", "filter", "search"]
+demosite = "https://cookdex.nuna.moe/"
+tags = ["recipe", "food"]
 features = ["Recipe filtering", "Search functionality", "Multilingual support", "Custom cursors", "Responsive design", "Recipe metadata", "Tag-based organization", "Accessible"]
 min_version = "0.120.0"
 

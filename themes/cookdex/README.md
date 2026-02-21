@@ -15,6 +15,9 @@ A cozy recipe theme for Hugo with an index card aesthetic and picnic table vibe.
 - **Clean Typography**: Custom Leila font for a handwritten aesthetic
 - **Accessible**: Built with accessibility standards in mind
 
+![Home](https://raw.githubusercontent.com/turkeystar142/cookdex-theme/main/images/screenshot.png)
+![Recipe](https://raw.githubusercontent.com/turkeystar142/cookdex-theme/main/images/tn.png)
+
 ## Requirements
 
 - Hugo **0.120.0** or later
@@ -119,12 +122,14 @@ tags:
 ### Available Tags
 
 **Flavor profiles:**
+
 - `savory` - Savory/salty dishes
 - `sweet` - Sweet dishes
 - `neutral` - Neither particularly sweet nor savory
 - `sour` - Sour dishes
 
 **Cooking methods:**
+
 - `stovetop` - Cooked on the stovetop
 - `oven` - Baked or roasted in the oven
 - `specialized` - Requires specialized equipment (waffle iron, bread machine, etc.)
@@ -151,7 +156,7 @@ Organize your recipe markdown with standard sections:
 ## Tips
 
 - Use room temperature butter for best results
-- Don't overbake - cookies continue cooking after removal
+- Don't overbake... cookies continue cooking after removal
 ```
 
 ## Customization
@@ -175,6 +180,7 @@ Settings are automatically saved to localStorage and persist across sessions. A 
 ### Custom Cursors
 
 Desktop users can choose from several food-themed cursors:
+
 - Default arrow
 - Apple
 - Berry
@@ -226,7 +232,7 @@ The theme includes four main JavaScript modules:
 
 ## Credits
 
-- Font Awesome icons: https://fontawesome.com/ (Font Awesome Free License)
+- Font Awesome icons: <https://fontawesome.com/> (Font Awesome Free License)
 - Leila/Leilali fonts: Created with Calligraphr
 
 ## Browser Support
@@ -242,15 +248,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This theme is released under the MIT License. See [LICENSE](LICENSE) for details.
-
-## Screenshots
-
-**TODO**: Add screenshots of your recipe site here showing:
-- Home page with recipe grid
-- Recipe detail page
-- Filter tray
-- Cursor selector
-- Gingham customizer
 
 ## Support
 
